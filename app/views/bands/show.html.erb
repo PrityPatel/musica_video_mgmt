@@ -1,0 +1,19 @@
+<h1><%= @band.name %></h1>
+
+<h3> Genre: <%= @band.genre %></h3>
+
+
+  <% @band.music_videos.each do |music_videos| %>
+  <li>
+    <%=link_to music_videos.title %>
+  </li>
+
+  <% end %>
+</ul>
+
+
+<footer>
+
+  <%= link_to "Back to Home", root_path %>
+
+</footer>
