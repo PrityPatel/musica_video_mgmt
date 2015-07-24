@@ -1,0 +1,8 @@
+<h1>Welcome to Musica Videos!</h1>
+<p>Here you can see a list of bands. Click any band to see it's music videos</p>
+
+<ul>
+  <% @bands.each do |band| %>
+  <li><%=band.name %></li>
+  <% end %>
+</ul>
